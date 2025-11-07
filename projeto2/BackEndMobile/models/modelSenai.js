@@ -33,7 +33,7 @@ const modelSenai = {
     //Obter usuário por ID
     listarPorID: async (id) => {
        try {
-            return await executeQuery(`SELECT nome, marca, nuemro, tipo FROM tenis WHERE id=?`, [id])
+            return await executeQuery(`SELECT nome, marca, numero, tipo FROM tenis WHERE id=?`, [id])
        } catch (error) {
             throw error
        }

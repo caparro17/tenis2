@@ -37,8 +37,8 @@ const Atualizar = ({ navigation, route}) => {
       })
       .catch(error => {
         if (error.response && error.response.status === 404) {
-          console.log(error);
           Alert.alert('Erro', 'ID de usuário não encontrado na base de dados.');
+          console.log(error);
         } else {
           Alert.alert('Erro', 'Ocorreu um erro ao atualizar o usuário. Por favor, tente novamente.');
           console.log(error)
